@@ -1,0 +1,165 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #0b3b47;
+    color: #ffffff;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #041f25;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+}
+
+.logo img {
+    width: 150px;
+    height: auto;
+}
+
+.logo span {
+    font-size: 1.5em;
+    margin-left: 10px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+
+.nav-links li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.burger {
+    display: none;
+    cursor: pointer;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.burger div {
+    width: 25px;
+    height: 3px;
+    background-color: #ffffff;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.content {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+}
+
+.text {
+    max-width: 50%;
+    padding-right: 20px;
+}
+
+h1 {
+    color: #ffba08;
+    font-size: 3em;
+}
+
+.image {
+    max-width: 45%;
+}
+
+.image img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+footer {
+    display: flex;
+    justify-content: center;
+    padding: 20px;
+    background-color: #041f25;
+}
+
+.social-media a img {
+    width: 30px;
+    height: auto;
+    margin: 0 10px;
+    filter: brightness(0) invert(1);
+}
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #041f25;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        width: 100%;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .burger {
+        display: flex;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .text, .image {
+        max-width: 100%;
+        padding: 0;
+    }
+
+    h1 {
+        font-size: 2em;
+    }
+
+    .logo img {
+        width: 90px;
+        height: auto;
+    }
+}
+
+@media (max-width: 480px) {
+    .text {
+        padding: 10px;
+    }
+
+    .text p {
+        font-size: 0.9em;
+    }
+
+    .social-media a img {
+        width: 25px;
+        margin: 0 5px;
+    }
+}
