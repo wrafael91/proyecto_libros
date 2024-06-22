@@ -1,0 +1,125 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-image: url('../img/libros_imagen.png');
+    background-size: cover;
+    background-position: center;
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.8);
+    margin: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+h1 {
+    font-size: 24px;
+    text-align: center;
+    flex: 1 0 100%;
+    margin-bottom: 10px;
+}
+
+.menu-button {
+    font-size: 24px;
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: none;
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    flex-wrap: wrap;
+}
+
+.search-container input {
+    width: 80%;
+    max-width: 600px;
+    padding: 10px;
+    border: 2px solid #000;
+    border-radius: 25px 0 0 25px;
+    font-size: 18px;
+}
+
+.search-container button {
+    padding: 10px;
+    background-color: #fff;
+    border: 2px solid #000;
+    border-left: none;
+    border-radius: 0 25px 25px 0;
+    cursor: pointer;
+}
+
+.search-container button img {
+    width: 24px;
+    height: 24px;
+}
+
+.results-container {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+}
+
+.request-button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    display: block;
+    margin-top: 10px;
+}
+
+@media (max-width: 768px) {
+    .search-container input {
+        width: 100%;
+        border-radius: 25px;
+        margin-bottom: 10px;
+    }
+
+    .search-container button {
+        width: 100%;
+        border-radius: 25px;
+        border-left: 2px solid #000;
+    }
+
+    .menu-button {
+        display: block;
+    }
+}
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 18px;
+    }
+
+    .search-container input,
+    .search-container button {
+        font-size: 16px;
+    }
+
+    .search-container button img {
+        width: 20px;
+        height: 20px;
+    }
+
+    .request-button {
+        padding: 8px;
+    }
+}

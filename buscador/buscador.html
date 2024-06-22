@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Buscador de Libros</title>
+    <link rel="stylesheet" href="styles_buscador.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>Ingresa el título del libro que deseas buscar</h1>
+            <button class="menu-button" onclick="toggleMenu()">&#9776;</button>
+        </header>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Buscar">
+            <button onclick="searchBook()">
+                <img src="../img/search-icon.png" alt="Buscar">
+            </button>
+        </div>
+        <div class="results-container" id="resultsContainer">
+            <h2>Resultados</h2>
+            <p>Don Quijote de la Mancha (1604), Autor: Miguel de Cervantes Saavedra</p>
+            <button class="request-button">Solicitar</button>
+        </div>
+    </div>
+    <script src="script_buscador.js"></script>
+</body>
+</html>
